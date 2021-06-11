@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "8282fc9c-ea14-413b-b3d3-8bfc41e20ab6",
+		"name": "webservicebpom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_produk",
+							"value": "Snack Ringan",
+							"type": "text"
+						},
+						{
+							"key": "jenis_produk",
+							"value": "Makanan",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_stok",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "7500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/webservicebpom/create.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webservicebpom",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/webservicebpom/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webservicebpom",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_produk",
+							"value": "Air Mineral Edit",
+							"type": "text"
+						},
+						{
+							"key": "jenis_produk",
+							"value": "Minuman",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_stok",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/webservicebpom/update.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webservicebpom",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/webservicebpom/delete.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webservicebpom",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
